@@ -1,0 +1,22 @@
+<?php session_start();
+
+    if(isset($_POST["lsubmit"]))
+    {
+        $fullname = $_POST["txtname"];
+	    $userName = $_POST["txtEmail"];
+	    $password = $_POST["txtPassword"];
+	    $Contacnumber = $_POST["txtContactNo"];
+
+        $conn = mysqli_connect("localhost","root", " ", "sassydb");
+
+
+        if(!$conn)
+        {
+            die("Sorry! we are facing a technical issue");
+        }
+
+        $sql ="INSERT INTO `tbluser`(`email`, `name`, `contactNumber`, `password`) VALUES ('".$userName."','".$fullname."','".$Contacnumber."','".$password."');";
+
+        mysqli_query($conn,$sql);
+		header('location: Profile.php');
+    }

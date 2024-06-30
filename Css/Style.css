@@ -1,0 +1,316 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*---------------------------------------Body---------------------------------------*/
+body
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url(/Images/Images/HomeBg\ \(3\).png);
+    background-size: cover;
+    background-color: #f2f2f2 ;
+    justify-content: center;align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*------------------------------------------------------------------------------------*/
+/*---------------------------------------Login-----------------------------------------*/
+.maincontainer1
+{
+    width: 65vw;
+    height: 80vh;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 7px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.ltitle
+{
+    width: 50%;
+    height: 100%;
+    background-image: url(/Images/Images/Login1.jpeg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.ltitle h1
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 180px;
+    font-weight: 10;
+    transform: rotate(0deg);  
+    color: black ;
+}
+.ltitle ul
+{
+    width: 30%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.ltitle img
+{
+    opacity:0.8 ;
+}
+.ltitle li img
+{
+    width: 30px;
+    transition: transform .3s;
+}
+.ltitle li img:hover
+{
+    width: 30px;
+    transform: scale(1.2);
+}
+/*--------------------------------------------------------------------*/
+.lform
+{
+    padding-top: 110px;
+    width: 50%; 
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.838);
+}
+.lform form
+{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+.lform form input,label,p,button
+{
+    width: 90%;
+    height: 30px;
+}
+.lform form a
+{
+    padding-left: 10%;
+    width: 110%;
+    height: 30px;
+}
+.lform form button
+{
+    height: 33px;
+    font-size: small;
+    background-color: black;
+    color: #f2f2f2;
+}
+.lform form button:hover
+{
+    opacity: 0.9;
+}
+.lform form button:active
+{
+    transform: scale(.95);
+}
+.lform form a input
+{
+    font-size: medium;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    font-size: small;
+}
+.lform form a input:hover
+{
+    background-color: rgba(0, 0, 0, 0.068);
+}
+.lform form a input:active
+{
+    transform: scale(.95);
+}
+.lform form a input:hover
+{
+    opacity: 0.9;
+}
+.lform form input
+{
+    padding-left: 10px;
+    border: hidden;
+    border-bottom: 2px solid black;
+}
+.lform form label
+{
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: medium;
+}
+.signp
+{
+    text-align: center;
+    font-weight:500 ;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*------------------------------------------------------------------------------------*/
+/*---------------------------------------Signup---------------------------------------*/
+
+.maincontainer2
+{
+    width: 70vw;
+    height: 80vh;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.4) 2px 2px 7px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.Stitle
+{
+    width: 50%;
+    height: 100%;
+    background-image: url(/Images/Images/Signup3.jpeg);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Stitle h1
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 200px;
+    font-weight: 10;
+    transform: rotate(0deg);  
+    color: black ;
+}
+.Stitle ul
+{
+    width: 30%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.Stitle img
+{
+    opacity:0.8 ;
+}
+.Stitle li img
+{
+    width: 30px;
+    transition: transform .3s;
+}
+.Stitle li img:hover
+{
+    width: 30px;
+    transform: scale(1.2);
+}
+/*--------------------------------------------------------------------*/
+.Sform
+{
+    padding-top: 10px;
+    width: 50%; 
+    height: 100%;
+    background-color:rgba(255, 255, 255, 0.838);
+}
+.Sform form
+{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+.Sform form input,label,p,button
+{
+    width: 90%;
+    height: 30px;
+}
+.Sform form a
+{
+    padding-left: 10%;
+    width: 110%;
+    height: 30px;
+}
+.namesign
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.namesign1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 97%;
+    padding-left: 8px;
+}
+.namesign1 label
+{
+   width: 44%;
+}
+.namesign2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 97%;
+    padding-left: 8px;
+}
+.Sform form .namesign input
+{
+    width: 44%;
+    height: 30px;
+}
+.Sform form button
+{
+    height: 33px;
+    font-size: small;
+    background-color: black;
+    color: #f2f2f2;
+    margin-top: 40px;
+}
+.Sform form button:hover
+{
+    opacity: 0.9;
+}
+.Sform form button:active
+{
+    transform: scale(.95);
+}
+.Sform form a input
+{
+    font-size: medium;
+    border: 3px solid black;
+    background-color: white;
+    color: black;
+    font-size: small;
+}
+.Sform form a input:hover
+{
+    background-color: rgba(0, 0, 0, 0.068);
+}
+.Sform form a input:active
+{
+    transform: scale(.95);
+}
+.Sform form a input:hover
+{
+    opacity: 0.9;
+}
+.Sform form input
+{
+    padding-left: 1px;
+    border: hidden;
+    border-bottom: 2px solid black;
+}
+.Sform form label
+{
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: medium;
+}
+.signp
+{
+    text-align: center;
+    font-weight:500 ;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}

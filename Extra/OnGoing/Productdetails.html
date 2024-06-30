@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sassy : Products Details : Online Womens Clothing Store</title>
+    <link rel="Stylesheet" type="text/css" href="/Css/detail.css">
+    <link rel="icon" type="image/x-icon" href="/Images/Logo/LogoW.png">
+    <style>
+        *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:100%;
+    font-weight: 400;
+}
+.Nav_bar
+{
+    height: 75px;
+    display: flex;
+    align-items:end;
+    margin-top: 15px;
+    align-items:center;
+}   
+.Nav_bar h1
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}  
+.Nav_bar01
+{
+    width: 40%;
+    height: 100%;
+}
+.Nav_bar02
+{
+    width: 20%;
+    height: 100%;
+    display:inline-flex;
+    justify-content: center;
+}
+.Nav_bar03
+{
+    height: 100%;
+    width: 40%;
+    display:inline;
+    justify-content: right;
+    padding-left: 300px;
+    padding-right: 100px;
+}
+.navlist1
+{
+    list-style:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.iconlist1
+{
+    list-style:none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.item
+{
+    text-align: center;
+    width: 100px;
+}
+.item a
+{
+    text-decoration: none;
+    color: black;
+    transition: transform .5s;
+}
+.item a:hover
+{
+    text-decoration: none;
+    color: #f98770;
+    font-weight: bolder;
+}
+.active
+{
+    border-bottom: 3px solid black;
+}
+
+.iconlist1
+{   
+    display: flex;
+    justify-content: space-evenly;
+}
+.iconlist1 a
+{
+    text-decoration: none;
+}
+.iconlist1 img
+{
+    transition: transform .2s;
+}
+.seach:hover
+{
+    transform: scale(1.5);
+}
+.cart:hover
+{
+    transform: scale(1.5);
+}
+.user:hover
+{
+    transform: scale(1.5);
+}
+/*------------------------------------Details----------------------------------*/
+.details
+{
+    display: flex;
+    height: 150vh;
+    margin-top: 70px;
+    /*background-image: url(/Images/Images/Catalog.jpeg);
+    background-size: cover;*/
+}
+.details .Middle_04
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.details .Middle_04 .container1
+{
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+.details .Middle_04 .container2
+{
+    height: 50%;
+    width: 100%;
+}
+.details .Middle_04 .container1 .item_img
+{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.details .Middle_04 .container1 .item_details
+{
+    height: 100%;
+    width: 40%;
+    background-color: #ffffff;
+}
+.sub
+{
+    height: 100%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.subimg
+{
+    height: 49%;
+    width: 100%;
+}
+.head
+{
+    height: 100%;
+    width: 105%;
+    background-color: antiquewhite;
+    background-image: url(/Images/Images/Item/Denimset01.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+#sub01
+{
+    background-image: url(/Images/Images/Item/Denimset02.jpg);
+    background-size:contain;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+#sub02
+{
+    background-image: url(/Images/Images/Item/item_18.jpg);
+    background-size:contain;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.item_details
+{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 50px;
+}
+.item_details h1
+{
+    font-size: 60px;
+    font-weight: 300;
+}
+.item_details h3
+{
+    font-size: 40px;
+    padding-top: 10px;
+    font-weight: 600;
+}
+
+.item_details .clour input
+{
+    width:  25px;
+    height: 25px;
+    margin-right:10px ;
+    transition: 0.3s;
+    margin-bottom: 25px;
+}
+.item_details .clour input:hover
+{
+    transform: scale(1.1);
+}
+.item_details .size input
+{
+    background-color: #ffffff;
+    color: #000000;
+    width: 50px;
+    height: 30px;
+    margin-right:10px ;
+    font-weight: 400;
+    font-size: 10px;
+    transition: 0.3s;
+    margin-bottom: 25px;
+}
+.item_details input:hover
+{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    opacity: 0.9;
+}
+.item_details input:active
+{
+    
+    transform: scale(0.8);
+}
+.item_details .size input:hover
+{
+    background-color: #000000;
+    color: #ffffff;
+    width: 50px;
+    transform: scale(1.1);
+}
+.item_details input
+{
+    width: 100%;
+    height: 35px;
+    margin-top: 15px;
+    background-color: black;
+    color: #e7e3e4;
+    margin-top: 10px;
+    font-size: medium;
+    font-weight: 400;
+    transition: transform 0.7s;
+}
+.item_details p
+{
+    font-size: medium;
+    
+    margin-bottom: 25px;
+}
+.item_details h5
+{
+    font-size: medium;
+    margin-top: 25px;
+}
+.container2 h5
+{
+
+    font-size: medium;
+    margin-top: 25px;
+}
+.container2 p
+{
+
+    font-size: medium;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+.care
+{
+    margin-left: 35px;
+}
+/*-----------------------------------------------PRODUCT-----------------------------------*/
+.productset
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+}
+.prdcard
+{
+    width: 17%;
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+}
+.p_top
+{
+    height: 80%;
+    background-size: cover;
+    font-size: 0.1px;
+    background-color: #f9877000;
+    transition: transform .4s;
+}
+.p_top:hover
+{   
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    text-align: center;
+    justify-content:center;
+    background-color: rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, 0.76);
+    scale: 1.05;
+    opacity: 0.7;
+}
+
+.p_top:active
+{
+    transform: scale(0.8);
+}
+.p_bottom
+{
+    height: 70px;
+    padding-left: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+.p_top a 
+{
+    color: #ffffff;
+    text-decoration: none; 
+    font-size: larger;
+    transform: rotate(90deg);
+    background-color: #000000;
+    width: 138%;
+}
+.addcart
+{
+    margin-top: 5px;
+    height: 28px;
+    background-color: black;
+    color: white;
+    font-weight: 100;
+    cursor: pointer;
+    transition: transform .4s;
+}
+.addcart:hover
+{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    opacity: 0.9;
+}
+.addcart:active
+{
+    
+    transform: scale(0.8);
+}
+.prd:hover
+{
+    color: #f98770;
+}
+/**--------------------------------------------------------------*/
+#top01
+{
+    background-image: url(/Images/Images/Item/item_18.jpg);
+    background-size: cover;
+}
+#top02
+{
+    background-image: url(/Images/Images/Item/item_12.jpg);
+    background-size: cover;
+}#top03
+{
+    background-image: url(/Images/Images/Item/item_13.jpg);
+    background-size: cover;
+}#top04
+{
+    background-image: url(/Images/Images/Item/item_14.jpg);
+    background-size: cover;
+}#top05
+{
+    background-image: url(/Images/Images/Item/item_16.jpg);
+    background-size: cover;
+}
+/*-------------------------------------Subscribe-------------------------------------*/
+.Subscribe
+{
+    margin-top: 200px;
+    height: 70vh;
+    width: 100%;
+}
+#slogo
+{
+    /*background-image: url(/SASSY/Brand/1x/1x/Artboard\ 1.png);
+    background-size: contain;
+    background-repeat: no-repeat;*/
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#slogo img
+{
+    display: flex;
+    width: 200px;
+}
+#sub011
+{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    font-weight:400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#sub021
+{
+    width: 100%;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.stext
+{
+    width: 50%;
+    height: 30%;
+    border:hidden;
+    border-bottom: 1px solid;
+    font-size: 20px;
+    text-align: center;
+}
+.sbutton
+{
+    margin-top: 10px;
+    width: 50%;
+    height: 30%;
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+    color: #e7e3e4;
+}
+.sbutton:hover
+{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.sbutton:active
+{
+    transform: scale(.95);
+}
+
+/*--------------------------------------Footer--------------------------------------*/
+.Footer
+{
+    height: 40vh;
+    width: 100%;
+    display:flex;
+    background-color: #e7e3e4;
+}
+.Middle_04 table
+{
+    width: 100%;
+    height: 100%;
+}
+.ft
+{
+    width: 100%;
+    height: 85%;
+}
+.ft td
+{
+    width: 10%;
+    height: 85%;
+}
+.ft ul
+{
+    list-style:none;
+}
+.ft ul li
+{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight:400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10px;
+}
+.ft ul li a
+{
+    text-decoration: none;
+    color: #000000;
+    transition: transform .10s;
+    border-left: #e7e3e4 3px solid;
+    padding-left: 5px;
+}
+.ft ul li a:hover
+{
+    text-decoration: none;
+    color: #000000;
+    border-left: #000000 3px solid;
+}
+.ftext
+{
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+    border:hidden;
+    border-bottom: 1px solid;
+    font-size: 12px;
+    text-align: center;
+    background-color: #e7e3e4;
+}
+.fbutton
+{
+    margin-top: 1px;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    text-align: center;
+    font-size: 12px;
+    color: #e7e3e4;
+}
+.fbutton:hover
+{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.fbutton:active
+{
+    transform: scale(.95);
+}
+/*--------------------------------Copywirte--------------------------------*/
+.Copywirte
+{
+    height: 5vh;
+    width: 100%;
+    display:flex;
+    background-color: #e7e3e4;
+}
+.Copywirte .Middle_02
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #e7e3e4;
+    font-size: medium;    font-size: 12px;
+    font-weight:400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*----------------------------------ALL----------------------------------*/
+.Middle_01
+{
+    width: 10%;
+    /*background-color: rgba(208, 222, 206, 0.246);*/
+}
+.Middle_02
+{
+    /*background-color: rgba(129, 158, 124, 0.314);*/
+    width: 90%;
+    height: 100%;
+}
+.Middle_03
+{
+    width: 10%;
+    /*background-color: rgba(113, 130, 110, 0.259);*/
+}
+.Middle_04
+{
+    width: 90%;
+    display: flex;
+}
+#P01
+{
+    height: 10%;
+    width: 100%;
+    /*background-color: rgb(255, 0, 115);*/
+}
+#P02
+{
+    height: 80%;
+    width: 100%;
+    /*background-color: rgb(118, 0, 53);*/
+    display: flex;
+}
+#P03
+{
+    height: 10%;
+    width: 100%;
+    /*background-color: rgb(86, 2, 51);*/
+}
+.left
+{
+    width: 100%;
+    height: 35%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+.left_02
+{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    margin-bottom: 27px;
+}
+.left_03
+{
+    width: 120%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    padding-top: 50px;
+    padding-right: 30px;
+}
+.left_social
+{
+    width: 25px;
+    height: 45px;
+    display: block;
+    transition: transform .2s;
+}
+.left_social:hover
+{
+    opacity: 0.8;
+    transform: scale(1.5);
+}
+
+
+    </style>
+
+</head>
+<body>
+    <div class="Nav_bar" id="P01">
+        <div class="Nav_bar01">
+            <ul class="navlist1">
+                <li class="item"><a href="Index.html" >Home</a> </li>
+                <li class="item"><a href="ProductsView.php">Proucts</a> </li>
+                <li class="item"><a href="Contac.html">Contact Us</a> </li>
+                <li class="item"><a href="Html/About.html">About Us</a> </li>
+                <li class="item"><a href="Html/Catalog.html">Catalog</a> </li>
+            </ul>  
+        </div>
+        <div class="Nav_bar02">
+            <h1 style="font-size: 50px; font-weight: 400;">SASSY</h1>
+            <!--- <img src="/Images/Logo/Name.png" height="50px"> -->
+        </div>
+        <div class="Nav_bar03">
+            <div class="iconlist1"> 
+                <a href="#Profile"><img class="seach" src="Images/Icons/Seach.png" width="20px"></a>
+                <a href="Profile"><img class="seach" src="Images/Icons/User.png" width="20px"></a>
+                <a href="Html/Cart.html"><img class="cart" src="Images/Icons/Cart.png" width="20px"></a>
+                </div>
+         </div>
+      </div>   
+    <!------------------------------------Details---------------------------------->
+    <div class="details">
+        <div class="Middle_01"></div>
+        <div class="Middle_04">
+            <div class="container1">
+                <div class="item_img">
+                    <div class="sub">
+                        <div class="subimg" id="sub01"></div>
+                        <div class="subimg" id="sub02"></div>
+                    </div>
+                    <div class="head"></div>
+                </div>
+                <div class="item_details">
+                    <h1> PATCH DENIM</h1>
+                    <h3>$ 400</h3>
+                    <h5>DESCRIPTION</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias perferendis id ad asperiores rerum? Praesentium debitis aut alias vel non accusamus blanditiis ullam quidem vitae sapiente. Quasi quisquam recusandae aliquid!</p>
+                    <label for="colour"> <h4>COLOURS</h4></label> 
+                    <div class="clour" id="colour">
+                        <input type="button" value="" style="background-color: rgb(195, 208, 251);">
+                        <input type="button" value="" style="background-color: rgb(162, 231, 249);">
+                        <input type="button" value="" style="background-color: rgb(204, 155, 234);">
+                        <input type="button" value="" style="background-color: rgb(166, 255, 197);">
+                    </div> 
+                    <label for="size"> <h4>SIZES</h4></label> 
+                    <div class="size" id="size">
+                        <input type="button" value="XS">
+                        <input type="button" value="S">
+                        <input type="button" value="M">
+                        <input type="button" value="L">
+                    </div> 
+                    <a href="Html/Cart.html"><input type="button" value="Add to Cart"></a>
+                    <input type="button" value="Buy Now">
+
+                </div>
+            </div>
+            <div class="container2"> <br><hr>
+                <h5>COMPOSITION </h5>
+                <p><b> 50% Linen - 50% Cotton </b><br>Embrace the iconic style of our classic denim jeans. Crafted with precision and attention to detail, these jeans offer a flattering fit and unmatched versatility. From casual outings to sophisticated evenings, they effortlessly accompany you on every occasion.</p>
+            <hr>
+                
+                <p><h5>CARE</h5>
+                    <ul class="care">
+                        <li>Wash inside out in cold water with a gentle cycle and mild detergent.</li>
+                        <li>Separate denim from other colors to prevent color bleeding.</li>
+                        <li>Air dry whenever possible or use a low heat setting in the dryer.</li>
+                        <li>Treat stains promptly with a mild detergent or stain remover.</li>
+                        <li>Store denim by hanging or folding neatly in a cool, dry place</li>
+                    </ul>
+                </p>
+            <hr>
+            <br>
+            <!----------------------------------------------------------------------->
+            <h1>You might also like</h1><br>
+<div class="productset">
+    <div class="prdcard">
+        <div class="p_top" id="top01">
+            <a href="Html/Productdetails.html"><small>Click on me </small></a>
+        </div>
+        <div class="p_bottom">
+            <h5>NAME</h5>
+            <p>Catagory</p>
+        </div>
+        <button class="addcart"> Add To Cart</button>
+    </div>
+    <div class="prdcard">
+        <div class="p_top" id="top03">
+            <a href="Html/Productdetails.html"><small>Click on me </small></a>
+        </div>
+        <div class="p_bottom">
+            <h5>NAME</h5>
+            <p>Catagory</p>
+        </div>
+        <button class="addcart"> Add To Cart</button>
+    </div>
+    <div class="prdcard">
+        <div class="p_top" id="top04">
+            <a href="Html/Productdetails.html"><small>Click on me </small></a>
+        </div>
+        <div class="p_bottom">
+            <h5>NAME</h5>
+            <p>Catagory</p>
+        </div>
+        <button class="addcart"> Add To Cart</button>
+    </div>
+    <div class="prdcard">
+        <div class="p_top" id="top02">
+            <a href="Html/Productdetails.html"><small>Click on me </small></a>
+        </div>
+        <div class="p_bottom">
+            <h5>NAME</h5>
+            <p>Catagory</p>
+        </div>
+        <button class="addcart"> Add To Cart</button>
+    </div>
+    <div class="prdcard">
+        <div class="p_top" id="top05">
+            <a href="Html/Productdetails.html"><small>Click on me </small></a>
+        </div>
+        <div class="p_bottom">
+            <h5>NAME</h5>
+            <p>Catagory</p>
+        </div>
+        <button class="addcart"> Add To Cart</button>
+    </div>
+</div>
+
+        </div>
+        </div>
+        <div class="Middle_03"></div>
+    </div>
+    <br>
+    <br>
+        <!-------------------------------------Subscribe------------------------------------>
+        <div class="Subscribe">
+            <div id="P01"></div>
+            <div id="P02">
+                <div class="Middle_01"></div>
+                <div class="Middle_02" id="sub">
+                    <div  style="width: 100%; height: 100%;">
+                        <div id="slogo" > <img src="Images/Logo/LogoB.png" alt="Company Logo"></div>
+                        <div id="sub011"> <p>Subscribe and get a discount 10% for you first order </p> </div>
+                        <div id="sub021"> <input class="stext" type="text" placeholder="Email"> <input class="sbutton" type="button" value="Subscribe"> </div>
+                    </div>
+                </div>
+                <div class="Middle_03"></div>
+            </div>
+            <div id="P03"></div>
+        </div>
+            <!------------------------------------Footer------------------------------------>
+            <div class="Footer">
+                <div class="Middle_01"></div>
+                <div class="Middle_04">
+                    <table>
+                        <tr class="ft">
+                            <td><ul>
+                                <li><a href="Index.html"> <b>HOME PAGE</b> </a></li>                          
+                                <li><a href="ProductsView.php"> <b>PROUCT PAGE</b></a></li>
+                                <li><a href="Html/Contac.html"><b>CONTAC US</b></a></li>
+                                <li><a href="Html/About.html"><b>ABOUT US</b></a></li>                           
+                                <li><a href="Html/Catalog.html"><b>CATALOG</b></a></li>
+                            </ul></td>
+                            <td><ul>
+                                <li> <b>CATALOG</b> </li>
+                                <li>New In</li>
+                                <li>Sale</li>
+                                <li>Clothing</li>
+                                <li>Accessories</li>
+                            </ul></td>
+                            <td><ul>
+                                <li> <b>COUSTOME CARE</b> </li>
+                                <li> FAQ</li>
+                                <li> Disposal Instructions</li>
+                                <li> Return Policy</li>
+                                <li> Promotion Terms & Conditions</li>
+                            </ul></td>
+                            <td>
+                            <ul>
+                                <li></b></li>
+                                <li><b></b</li>
+                            </ul>
+                            </td>
+                            <td><ul>
+                                <li> <b>COUSTOME CARE</b> </li>
+                                <li> <input class="ftext" type="text" placeholder="Your Questions"></li>
+                                <li> <input class="fbutton" type="button" value="Any Question"></li>
+                            </ul></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="Middle_03"></div>
+            </div>
+            <hr>
+            <!------------------------------------Copywirte------------------------------------>
+            <div class="Copywirte">
+                <div class="Middle_01"></div>
+                <div class="Middle_02">
+                    <p>@ <i> Copyright</i> SASSY Clothing <i> 2023 - 2024</i></p>
+                    <p> <i>All rights reserved Powerd By the</i> <b>Minura Anuradha</b>  </p>
+                </div>
+                <div class="Middle_03"></div>
+            </div>
+</body>         
