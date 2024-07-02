@@ -220,7 +220,7 @@ navSlide();
 		 $imagePath = "uploads/".basename($_FILES["imageFile"]["name"]);
 		 move_uploaded_file($_FILES["imageFile"]["tmp_name"] ,$imagePath);
 		 
-	$con = mysqli_connect("localhost","root","","sassydb","3377") ;//Connet to the data base with 
+	$consqli_connect("localhost","root","","sassydb","3377") ;//Connet to the data base with 
 	if (!$con){
 		die("Sorry we are facing some tech issue");
 	}
