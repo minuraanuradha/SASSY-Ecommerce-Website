@@ -120,7 +120,7 @@ navSlide();
     <div class="Nav_bar" id="P01">
         <div class="Nav_bar01">
             <ul class="navlist1">
-                <li class="item"><a href="Index.html" >Home</a> </li>
+                <li class="item"><a href="index.html" >Home</a> </li>
                 <li class="item"><a href="ProductsView.php" >Proucts</a> </li>
                 <li class="item"><a href="Contac.html" >Contact Us</a> </li>
                 <li class="item"><a href="About.html">About Us</a> </li>
