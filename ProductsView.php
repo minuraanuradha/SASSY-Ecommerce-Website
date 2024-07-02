@@ -154,7 +154,7 @@ navSlide();-->
     <hr>
 
   <?php
-		$con = mysqli_connect("localhost","root","","sassydb") ;
+		$con = mysqli_connect("localhost","root","","sassydb","3377") ;
 	if (!$con){
 		die("Sorry we are facing some tech issue");
 	}

@@ -334,33 +334,37 @@ body
     </div>
 
     <?php
-		$con = mysqli_connect("localhost","root","","sassydb") ;
-	if (!$con){
-		die("Sorry we are facing some tech issue");
-	}
-	$sql ="SELECT * FROM `tbladvertisement` WHERE  `email` ='".$_SESSION["userName"]."'";
-	$results = mysqli_query($con,$sql);
-	if (mysqli_num_rows($results)>1){
-		while($row = mysqli_fetch_assoc($results)){
-	?> 
+    $con = mysqli_connect("localhost", "root", "", "sassydb", "3377");
+    if (!$con) {
+        die("Sorry we are facing some tech issue");
+    }
+    $sql = "SELECT * FROM `tbladvertisement` WHERE `email` ='" . $_SESSION["userName"] . "'";
+    $results = mysqli_query($con, $sql);
+    if (mysqli_num_rows($results) > 0) {
+        while ($row = mysqli_fetch_assoc($results)) {
+    ?> 
 
-
-    <div class="set07" style="" >
-            <div class="pdetails" style="width=100% ">
+    <div class="set07">
+        <div class="pdetails" style="width:100%">
             <br><br>
-                <h1 >Profile Details</h1><br><br><br>
-                <h5>Email address</Address></h5> 
-                <h3><?php echo $row["email"]; ?></h3> <br>
-                <h5>Contac Number </h5> 
-                <h3><?php echo $row["contactNumber"]; ?></h3> <br>
-                <h5>Country</h5>
-                <h3>Sri Lanka</h3> <br><br>
+            <h1>Profile Details</h1><br><br><br>
+            <h5>Email address</h5> 
+            <h3><?php echo $row["email"]; ?></h3> <br>
+            <h5>Contact Number</h5> 
+            <h3><?php echo $row["contactNumber"]; ?></h3> <br>
+            <h5>Country</h5>
+            <h3>Sri Lanka</h3> <br><br>
+            <input class="btn600" type="button" value="Log Out" onclick="window.location.href='Logout.php';">
+        </div> 
+    </div><br>
 
-                <input class="btn600" type="button" value="Log Out">
-            </div> 
-        </div><br>
-       
-        <?php }} ?>  
+    <?php 
+        }
+    } else {
+        echo "<p>No profile details found.</p>";
+    }
+    mysqli_close($con);
+    ?>   
    
 
 </body>

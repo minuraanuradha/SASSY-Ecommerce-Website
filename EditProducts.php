@@ -17,7 +17,8 @@ if(!$_SESSION["userName"])
       <style>
 .form-style-5{
 	width: 100%;
-  height:95vh;
+  height:max-content;
+  padding: 10px 0 40px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,13 +51,12 @@ if(!$_SESSION["userName"])
 .form-style-5 input[type="file"],
 .form-style-5 textarea,
 .form-style-5 select {
-	font-family:font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	background:#ffffff;
 	border: none;
 	font-size: 15px;
 	padding: 20px;
 	width: 100%;
-  height: ;
 	box-sizing: border-b40pxox; 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box; 
@@ -182,7 +182,7 @@ navSlide();
 	
    <?php 
     $_SESSION["id"] = $_GET["id"];
-    $con = mysqli_connect("localhost","root","","sassydb"); 
+    $con = mysqli_connect("localhost","root","","sassydb","3377"); 
   if(!$con){
             die("We are on Trooble");
   }
@@ -192,7 +192,7 @@ navSlide();
  $row = mysqli_fetch_assoc($results);
     ?>
 <fieldset>
-<legend> Iteam Edit</legend>
+<legend> <h2>Iteam Edit</h2></legend>
 <p>
   <input type="text" name="txtTitle" placeholder="Product Name *"
 		 value="<?php echo $row["productName"];?>">

@@ -20,7 +20,8 @@ if(!$_SESSION["userName"])
 /*------------------------ */
 .form-style-5{
 	width: 100%;
-  height:95vh;
+  height:max-content;
+  padding: 10px 0 40px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,14 +53,12 @@ if(!$_SESSION["userName"])
 .form-style-5 input[type="url"],
 .form-style-5 input[type="file"],
 .form-style-5 textarea,
-.form-style-5 select {
-	font-family:font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.form-style-5 select {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	background:#ffffff;
 	border: none;
 	font-size: 15px;
 	padding: 20px;
 	width: 100%;
-  height: ;
 	box-sizing: border-b40pxox; 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box; 
@@ -221,7 +220,7 @@ navSlide();
 		 $imagePath = "uploads/".basename($_FILES["imageFile"]["name"]);
 		 move_uploaded_file($_FILES["imageFile"]["tmp_name"] ,$imagePath);
 		 
-	$con = mysqli_connect("localhost","root","","sassydb") ;//Connet to the data base with 
+	$con = mysqli_connect("localhost","root","","sassydb","3377") ;//Connet to the data base with 
 	if (!$con){
 		die("Sorry we are facing some tech issue");
 	}

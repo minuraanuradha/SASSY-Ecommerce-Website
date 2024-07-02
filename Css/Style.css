@@ -39,7 +39,7 @@ body
 .ltitle h1
 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 180px;
+    font-size: 10vw;
     font-weight: 10;
     transform: rotate(0deg);  
     color: black ;
@@ -69,7 +69,7 @@ body
 /*--------------------------------------------------------------------*/
 .lform
 {
-    padding-top: 110px;
+    padding-top: 10vh;
     width: 50%; 
     height: 100%;
     background-color:rgba(255, 255, 255, 0.838);
@@ -172,7 +172,7 @@ body
 .Stitle h1
 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 200px;
+    font-size: 10vw;
     font-weight: 10;
     transform: rotate(0deg);  
     color: black ;
@@ -265,7 +265,7 @@ body
     font-size: small;
     background-color: black;
     color: #f2f2f2;
-    margin-top: 40px;
+    margin-top: 3vh;
 }
 .Sform form button:hover
 {

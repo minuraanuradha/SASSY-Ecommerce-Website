@@ -142,7 +142,7 @@ navSlide();
     <h1 class="prd" style="font-size: 30px; transform: rotate(0deg); font-weight: 70; margin-top: 10px; text-align: center;">MY CLOTHING </h1> 
     <hr>
   <?php
-		$con = mysqli_connect("localhost","root","","sassydb") ;
+		$con = mysqli_connect("localhost","root","","sassydb","3377") ;
 	if (!$con){
 		die("Sorry we are facing some tech issue");
 	}
@@ -151,7 +151,7 @@ navSlide();
 	if (mysqli_num_rows($results)>0){
 		while($row = mysqli_fetch_assoc($results)){
 	?>
-  <div class="row">
+  <div class="row" style="margin-bottom: 40px;">
   <div class="column">
     <div class="card">
 	  <img src="<?php echo $row["imagePath"]; ?>"  style="width:100%" >

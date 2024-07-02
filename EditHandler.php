@@ -27,7 +27,7 @@ if(isset($_POST["btnSubmit"]))
 	
 	
 	
-	$con = mysqli_connect("localhost","root","","sassydb") ;//Connet to the data base with 
+	$con = mysqli_connect("localhost","root","","sassydb","3377") ;//Connet to the data base with 
 	if (!$con){
 		die("Sorry we are facing some tech issue");
 	}

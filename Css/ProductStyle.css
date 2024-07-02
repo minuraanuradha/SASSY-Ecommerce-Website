@@ -287,7 +287,7 @@ body
 .About
 {
     display: flex;
-    height: 75vh;
+    height: max-content;
     margin-top: 70px;
     /*background-image: url(/Images/Images/Catalog.jpeg);
     background-size: cover;*/
@@ -299,7 +299,6 @@ body
 }
 .About .Middle_04 .ahead
 {
-    width: 40%;
     background-image: url(/Images/Images/Aboutus3.jpeg);
     background-size: cover;
     background-repeat: no-repeat;

@@ -8,7 +8,7 @@
 	    $password = $_POST["txtPassword"];
 	    $Contacnumber = $_POST["txtContactNo"];
 
-        $con = mysqli_connect("localhost","root","","sassydb");
+        $con = mysqli_connect("localhost","root","","sassydb","3377");
 
 
         if(!$con)

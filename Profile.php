@@ -141,7 +141,7 @@ color:black;
          </div>
     </div>
 
-    <table width="100%" height="225" align="center">
+    <table width="100%" height="225" aligen="center">
         <tbody>
           <tr>
             <td width="900"><div class="main-section">

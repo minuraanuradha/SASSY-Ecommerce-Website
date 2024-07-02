@@ -3,7 +3,7 @@ if(isset($_POST["btnSubmit"]))
 {
 	$userName = $_POST["txtEmail"];
 	$password = $_POST["txtPassword"];
-	$con = mysqli_connect("localhost","root","","sassydb") ;//Connet to the data base with 
+	$con = mysqli_connect("localhost","root","","sassydb","3377") ;//Connet to the data base with 
 	if (!$con){
 		die("Connection failed: ");
 	}
