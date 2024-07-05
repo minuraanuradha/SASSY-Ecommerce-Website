@@ -144,8 +144,6 @@ body
 {
     text-align: center;
     font-weight:500 ;
-    padding-top: 10px;
-    margin-bottom: 10px;
 }
 
 /*------------------------------------------------------------------------------------*/
@@ -218,7 +216,7 @@ body
 .Sform form input,label,p,button
 {
     width: 90%;
-    height: 30px;
+    height: 29px;
 }
 .Sform form a
 {
@@ -311,6 +309,6 @@ body
 {
     text-align: center;
     font-weight:500 ;
-    padding-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 5px;
+    margin-bottom: 5px;
 }

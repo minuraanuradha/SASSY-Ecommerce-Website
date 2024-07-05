@@ -338,7 +338,7 @@ body
     if (!$con) {
         die("Sorry we are facing some tech issue");
     }
-    $sql = "SELECT * FROM `tbladvertisement` WHERE `email` ='" . $_SESSION["userName"] . "'";
+    $sql = "SELECT * FROM `tbluser` WHERE `email` ='" . $_SESSION["userName"] . "'";
     $results = mysqli_query($con, $sql);
     if (mysqli_num_rows($results) > 0) {
         while ($row = mysqli_fetch_assoc($results)) {
@@ -346,8 +346,10 @@ body
 
     <div class="set07">
         <div class="pdetails" style="width:100%">
-            <br><br>
-            <h1>Profile Details</h1><br><br><br>
+        <br><br>
+            <h1>Profile Details</h1><br>
+            <h5>Name</h5> 
+            <h3><?php echo $row["name"]; ?></h3> <br>
             <h5>Email address</h5> 
             <h3><?php echo $row["email"]; ?></h3> <br>
             <h5>Contact Number</h5> 
