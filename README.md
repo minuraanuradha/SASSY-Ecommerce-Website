@@ -49,9 +49,6 @@ You can view the live project on GitHub Pages: [Live View](https://minuraanuradh
 ## Contributing 🙌
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
 
-## License 📜
-This project is licensed under the MIT License.
-
 ## Contact 📧
 For any inquiries, please contact me via [LinkedIn](https://www.linkedin.com/in/minura-jayasingha-62360724b/) or email at minura.aaj01@gmail.com.
 
